@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright (c) Kelly Harnden
 ############
 #
 # Makes a new xdg-menu, twiddles some stuff in it, propagates it for users
