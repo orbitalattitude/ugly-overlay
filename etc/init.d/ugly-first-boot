@@ -1,5 +1,11 @@
 #!/bin/sh
-#ugly needs to do some first boot stuff
+# Copyright (c) Kelly Harnden
+# ugly needs to do some first boot stuff
+# note: this is currently not totally needed
+# as we could just fire this stuff off in the
+# suse studio build script first boot section
+# but is not disruptive in testing and will
+# probably be needed soon.
 
 case "$1" in
   start)
