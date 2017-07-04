@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright (c) Kelly Harnden
 #######
 #
 # Set motd to simple welcome
