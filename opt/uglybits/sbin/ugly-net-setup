@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright (c) Kelly Harnden
 ##########################
 #
 # just a quickie to get broadcom wifi working
