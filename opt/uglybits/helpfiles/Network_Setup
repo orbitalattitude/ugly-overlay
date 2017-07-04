@@ -1,0 +1,22 @@
+Network_Setup
+
+Many usb-ethernet devices will just work.
+They will try to grab DHCP. Some may require
+a little work.
+
+To get broadcom wifi working on a lot of modern
+Apple machines, we will need to install
+broadcom firmware. Unfortunately we cannot
+ship this firmware with the OS because of
+evil licensing by broadcom. :(
+
+If you have a chipset that works with 
+broadcom-wl you can set it up by connecting
+through ethernet or a supported wifi dongle.
+Just run /opt/uglybits/ugly-net-setup but 
+be aware this will reboot after the firmware
+is downloaded. Then log in as root and use
+'yast' to configure the wifi. 
+
+Hopefully we can improve on wifi config in
+the future!

@@ -1,0 +1,8 @@
+#!/bin/bash
+##########
+#
+# Cat the MOTD
+#
+##########
+
+cat /opt/uglybits/misc/motd-default

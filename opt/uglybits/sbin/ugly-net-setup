@@ -1,0 +1,28 @@
+#!/bin/bash
+##########################
+#
+# just a quickie to get broadcom wifi working
+# on macbook air early 2015 and similar.
+# 
+# Relies on the suse install script. 
+#
+##########################
+
+function myconfirm()
+{
+  local response
+  local msg="${1:-Are you sure? This will reboot when done!} [y/N] "; shift
+  read -r $* -p "$msg" response || echo
+  case "$response" in
+  [yY][eE][sS]|[yY]) return 0 ;;
+  *) return 1 ;;
+  esac
+}
+
+myconfirm
+
+if [ $? -eq 0 ] ; then
+  install_bcm43xx_firmware
+  reboot
+fi
+

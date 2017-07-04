@@ -1,0 +1,14 @@
+#!/bin/bash
+############
+#
+# Make and install pommed-light
+#
+############
+
+cd /opt/pommed-light
+make
+cp pommed/pommed /usr/bin
+mkdir -p /usr/share/pommed
+cp pommed/data/* /usr/share/pommed
+/etc/init.d/pommed start 
+insserv /etc/init.d/pommed

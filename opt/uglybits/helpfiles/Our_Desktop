@@ -1,0 +1,18 @@
+Our_Desktop
+
+uglyOS systems boot to runlevel 3 by default.
+You will have some terminals available to use.
+
+If you log into one and execute the command:
+
+startx
+
+You should be put into the default desktop.
+Fluxbox will be your window manager. 
+
+Right-click the desktop to see the main menu.
+Most applications will be listed here.
+
+If you are on a system with a multitouch pad
+then a two-finger-click should register as
+a right-click. 

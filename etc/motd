@@ -1,0 +1,24 @@
+Welcome to uglyOS! 
+
+The only default user is root!
+You should add at least one user!
+Your default passwd for root:	uglyostemppass
+
+Commands to get you started (as root):
+----------------------------
+ugly-help				Interactive help
+passwd					Change password
+ugly-user-add <username>		Add a user
+exit					Log out of a session
+ugly-motd-kill				Kill this message for all users
+ugly-issue-kill  			Kill the pre-login root pass hint
+ugly-net-setup				Setup b43 wifi (requires network)
+yast					Config stuff like wifi interfaces
+
+Once you are logged in as a non-root user:
+----------------------------
+ugly-help				Interactive help
+startx					Start a graphical session
+su					Switch to root user
+exit					Exit an su session (as any other)
+ugly-motd-repeat			Repeat this message

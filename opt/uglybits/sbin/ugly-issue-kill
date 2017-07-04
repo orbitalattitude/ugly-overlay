@@ -1,0 +1,8 @@
+#!/bin/bash
+#######
+#
+# Set motd to simple welcome
+#
+#######
+
+echo "Welcom to uglyOS!\n\n" > /etc/issue

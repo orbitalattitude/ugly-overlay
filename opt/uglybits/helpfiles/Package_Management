@@ -1,0 +1,14 @@
+Package_Management
+
+uglyOS comes pre-installed 2 package managers
+zypper - a command line package manager
+yast - a curses menu based system config tool
+
+You will have Suse LEAP repos pre-configured
+along with a couple of others that help us
+build the OS images. You can of course add
+more if you like. 
+
+Yast is useful for a lot more than just basic
+package mangement. Both tools are well 
+documented on the web. 

@@ -1,0 +1,27 @@
+#!/bin/sh
+#ugly needs to do some first boot stuff
+
+case "$1" in
+  start)
+        /opt/uglybits/sbin/ugly-pommed-install 
+	insserv /etc/init.d/ugly-first-boot -r
+        ;;
+  stop)
+        echo "I'm Done"
+        ;;
+  restart)
+        echo "Restarts are ignored"
+        ;;
+  reload|force-reload)
+        echo "Reloads are ignored"
+        ;;
+  status)
+        echo "Status checks are ignored"
+        ;;
+  *)
+        echo "You are doing it wrong"
+        exit 1
+        ;;
+esac
+ 
+exit

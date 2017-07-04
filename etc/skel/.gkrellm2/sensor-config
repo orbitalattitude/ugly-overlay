@@ -1,0 +1,50 @@
+sensor sensor_config_version 1
+sensor sensor_sysdep_private 2
+sensor sensor_float_factor 10000
+sensor gkrellm_float_factor 1000
+sensor sysdep_option use_nvclock 0
+sensor "temp1" "BAT0@0/temp1" 0 0 0 0
+sensor "TB0T" "applesmc@300/temp1" 0 0 0 0
+sensor "TCGC" "applesmc@300/temp10" 0 0 0 0
+sensor "TCHP" "applesmc@300/temp11" 0 0 0 0
+sensor "TCMX" "applesmc@300/temp12" 0 0 0 0
+sensor "TCSA" "applesmc@300/temp13" 0 0 0 0
+sensor "TCXC" "applesmc@300/temp14" 0 0 0 0
+sensor "TH0A" "applesmc@300/temp15" 0 0 0 0
+sensor "TH0B" "applesmc@300/temp16" 0 0 0 0
+sensor "TH0C" "applesmc@300/temp17" 0 0 0 0
+sensor "TH0F" "applesmc@300/temp18" 0 0 0 0
+sensor "TH0R" "applesmc@300/temp19" 0 0 0 0
+sensor "TB1T" "applesmc@300/temp2" 0 0 0 0
+sensor "TH0V" "applesmc@300/temp20" 0 0 0 0
+sensor "TH0a" "applesmc@300/temp21" 0 0 0 0
+sensor "TH0b" "applesmc@300/temp22" 0 0 0 0
+sensor "TH0c" "applesmc@300/temp23" 0 0 0 0
+sensor "THSP" "applesmc@300/temp24" 0 0 0 0
+sensor "TM0P" "applesmc@300/temp25" 0 0 0 0
+sensor "TPCD" "applesmc@300/temp26" 0 0 0 0
+sensor "TS2P" "applesmc@300/temp27" 0 0 0 0
+sensor "TW0P" "applesmc@300/temp28" 0 0 0 0
+sensor "Ta0P" "applesmc@300/temp29" 0 0 0 0
+sensor "TB2T" "applesmc@300/temp3" 0 0 0 0
+sensor "Th1H" "applesmc@300/temp30" 0 0 0 0
+sensor "Tm0P" "applesmc@300/temp31" 0 0 0 0
+sensor "Ts0P" "applesmc@300/temp32" 0 0 0 0
+sensor "Ts0S" "applesmc@300/temp33" 0 0 0 0
+sensor "TBXT" "applesmc@300/temp4" 0 0 0 0
+sensor "TC0E" "applesmc@300/temp5" 0 0 0 0
+sensor "TC0F" "applesmc@300/temp6" 0 0 0 0
+sensor "TC0P" "applesmc@300/temp7" 0 0 0 0
+sensor "TC1C" "applesmc@300/temp8" 0 0 0 0
+sensor "TC2C" "applesmc@300/temp9" 0 0 0 0
+sensor "Package id 0" "coretemp@0/temp1" 0 0 0 0
+sensor "Core 0" "coretemp@0/temp2" 0 0 0 0
+sensor "Core 1" "coretemp@0/temp3" 0 0 0 0
+sensor "temp1" "pch_wildcat_point@0/temp1" 0 0 0 0
+sensor "temp" "thermal_zone0" 10000 0 0 0
+sensor "temp" "thermal_zone1" 10000 0 0 0
+sensor "temp" "thermal_zone2" 10000 0 0 0
+sensor "Exhaust  " "applesmc@300/fan1" 0 0 0 0
+sensor units_fahrenheit 0
+sensor show_units 1
+sensor volt_display_mode 0

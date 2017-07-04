@@ -1,0 +1,58 @@
+#!/bin/bash
+#################################################
+#
+# ugly-help by kmh
+#
+# An interactive help script for uglyOS
+#
+# This is more complicated than it needs to be
+# but I am planning to add some features later. 
+# Just laying out a skeleton for now...
+#
+#################################################
+
+#define some paths
+uglybits_path="/opt/uglybits"
+uglyhelp_path="$uglybits_path/helpfiles"
+
+#function defs
+#################################################
+#
+# function: mymenu()
+#
+# description: Create a menu of the filenames
+#              found in the uglyhelp_path and
+#              a quit option. Execute whatever
+#              file is chosen and repeat -or-
+#              quit if the quit option is chosen
+#
+#################################################
+function mymenu()
+{
+
+  PS3='
+Choose a number! 
+<enter> to print menu:> '
+
+  select command in `ls $uglyhelp_path` QUIT;
+  do
+    if [ "$command" == "QUIT" ]; then 
+      echo 'bye!'
+      break
+    else
+      clear
+      cat "$uglyhelp_path/$command"
+    fi
+  done
+}
+
+
+#print welcome and fire off menu function
+clear
+echo
+echo
+echo "Welcome to uglyhelp!"
+echo 
+echo
+
+mymenu

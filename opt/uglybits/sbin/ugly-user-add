@@ -1,0 +1,12 @@
+#!/bin/bash
+###########
+#
+# Add a user
+#
+###########
+
+useradd -m "$1"
+passwd "$1"
+sed -i "s/CHANGEME/\/home\/$1/" /home/"$1"/.gkrellm2/theme_config
+echo "Some warnings here ok as we generate the application menu"
+/opt/uglybits/sbin/ugly-menu-update

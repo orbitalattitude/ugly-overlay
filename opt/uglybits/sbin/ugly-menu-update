@@ -1,0 +1,14 @@
+#!/bin/bash
+############
+#
+# Makes a new xdg-menu, twiddles some stuff in it, propagates it for users
+#
+############
+
+for i in `ls /home`; 
+do  
+xdg_menu --format fluxbox --root-menu /etc/xdg/menus/applications.menu | \
+  sed 's/SUSE/uglyOS/g' | \
+  sed 's/xterm/xterm -rv/g' | \
+  sed '/Blender/d' >/home/$i/.fluxbox/menu.xdg; 
+done
