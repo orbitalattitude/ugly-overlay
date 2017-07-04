@@ -1,0 +1,3 @@
+[submodule "opt/pommed-light"]
+	path = opt/pommed-light
+	url = git://github.com/orbitalattitude/pommed-light.git
