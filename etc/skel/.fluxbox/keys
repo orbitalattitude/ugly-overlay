@@ -1,3 +1,18 @@
+
+# Added for ugly os
+##################
+# This makes media keys on macbook air early 2015 work right with PulseAudio
+# (probably works on lots of machines)
+None XF86AudioLowerVolume :ExecCommand pactl set-sink-mute 1 false ; pactl set-sink-volume 1 -5%
+None XF86AudioRaiseVolume :ExecCommand pactl set-sink-mute 1 false ; pactl set-sink-volume 1 +5%
+None XF86AudioMute :ExecCommand pactl set-sink-mute 1 toggle
+None XF86LaunchA :ExecCommand xterm -rv
+None XF86LaunchB :ExecCommand chromium
+None XF86AudioPlay :ExecCommand audacious --play-pause
+None XF86AudioPrev :ExecCommand audacious --rew
+None XF86AudioNext :ExecCommand audacious --fwd
+##################
+
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu
@@ -65,9 +80,11 @@ Mod1 F2 :Exec fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+#176 :Exec amixer sset Master,0 1+
+#174 :Exec amixer sset Master,0 1-
+#160 :Exec amixer sset Master,0 toggle
+
+
 
 # current window commands
 Mod1 F4 :Close
